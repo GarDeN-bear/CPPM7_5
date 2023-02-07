@@ -47,6 +47,7 @@ public:
 		C = C_;
 	}
 	void get_info() {
+		std::cout << name << ":\n";
 		std::cout << "Стороны: " << "a=" << a
 			<< " b=" << b << " c=" << c << "\n";
 		std::cout << "Углы: " << "A=" << A
@@ -145,6 +146,7 @@ public:
 		D = D_;
 	}
 	void get_info() {
+		std::cout << name << ":\n";
 		std::cout << "Стороны: " << "a=" << a
 			<< " b=" << b << " c=" << c << " d=" << d << "\n";
 		std::cout << "Углы: " << "A=" << A
