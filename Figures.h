@@ -18,6 +18,11 @@ public:
 	virtual bool check() {
 		return 1;
 	}
+	virtual void get_info() {
+		std::cout << name << ":\n";
+		std::cout << "Количество сторон: " << sides_count << "\n";
+		std::cout << "\n";
+	}
 protected:
 	std::string name = "Фигура";
 	int sides_count = 0;
@@ -46,7 +51,7 @@ public:
 		B = B_;
 		C = C_;
 	}
-	void get_info() {
+	void get_info() override {
 		std::cout << name << ":\n";
 		std::cout << "Стороны: " << "a=" << a
 			<< " b=" << b << " c=" << c << "\n";
@@ -145,7 +150,7 @@ public:
 		C = C_;
 		D = D_;
 	}
-	void get_info() {
+	void get_info() override {
 		std::cout << name << ":\n";
 		std::cout << "Стороны: " << "a=" << a
 			<< " b=" << b << " c=" << c << " d=" << d << "\n";
